@@ -1,0 +1,16 @@
+body{
+
+}
+.container-fluid{
+    background-color: rgb(23, 26, 53);
+    border: 1px solid black;
+}
+.navbar-brand{
+    margin-left: 20px;
+    
+}
+
+
+#white{
+    color: white;
+}
