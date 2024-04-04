@@ -1,12 +1,103 @@
 body{
+background-image: radial-gradient(#0397AB,#005A82,#0A323C,#091428);}
 
+
+/* COLOR NAVBAR menu celu*/
+.custom-navbar-toggler {
+    background-color: rgb(190, 188, 188); /* Cambia el color del texto */
 }
 
+/* COLOR NAVBAR*/
 .navbar{
-    background-image: linear-gradient(45deg, #1E2328,  #1E282D,#3C3C41);
+    background-image: linear-gradient(bottom, #091428,  #0A323C);
 }
 
 
+/* cambio color letras navbar*/
 #white{
-    color: white;
+ color: gray;}
+
+#white:hover{color: white;
+    transform: translateY(-2px);
+transition: 0.3s;}
+
+/* Movimiento del logo 
+#logoP:hover{}*/
+
+
+/* formato footer*/
+footer{background-color: black;
+position: relative;
+width: 100%;
+height: 100px;
+bottom: 0;}
+
+/* editar contenido del footer*/
+.footer{
+        color: white;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        
 }
+/* editar iconos footer*/
+.footer a{font-size: 25px;}
+
+/* Edit iconos*/
+.icono1{}
+.icono1:hover{color: rgb(40, 29, 189);
+    transform: scale(1.2);
+    transition: 0.6s;}
+
+.icono2{color: green;}
+.icono2:hover{color: rgb(1, 80, 1);
+    transform: scale(1.2);
+    transition: 0.6s;}
+
+.icono3{color: rgb(170, 167, 167);}
+.icono3:hover{color: rgb(139, 137, 137);
+    transform: scale(1.2);
+    transition: 0.6s;}
+
+
+
+
+
+/* Estilo para todas las imágenes */
+img {
+    max-width: 100%; /* Ajusta el tamaño máximo de la imagen al tamaño del contenedor */
+    height: auto; /* Permite que la imagen se ajuste proporcionalmente */
+    display: block; /* Elimina espacios verticales alineando las imágenes */
+}
+
+  /* Establece un tamaño específico para todas las imágenes */
+.fixed-size {
+    width: 200px; /* Ancho fijo */
+    height: 150px; /* Altura fija */
+    border-radius: 3px;  
+}
+
+.card{
+    color: gray;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    border: 2px solid #3C3C41;
+    margin-bottom: 10px;
+    background-image: linear-gradient(#010A13,#1E282D,#1E2328)}
+.card:hover{transform: translateY(-10px);
+transition: 0.6s;}
+
+
+.btn{background-color: #091428;
+border: none;}
+
+/* HR */
+hr{color: black; }
+
+#carrusel1{position: absolute;
+    padding: 0;
+    margin-top: 20px;}
+
+#member:hover{transform: translateY(-10px);
+            transition: 0.4s;}
