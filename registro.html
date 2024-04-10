@@ -29,7 +29,7 @@
                   <a class="nav-link" id="white" href="region.html"><b>REGIONES</b></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="white" href="#"><b>FANARTS</b></a>
+                  <a class="nav-link" id="white" href="fanArt.html"><b>FANARTS</b></a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" id="white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -37,7 +37,7 @@
                   </a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="Clinea.html">LINEA</a></li>
-                    <li><a class="dropdown-item" href="#">TIPO</a></li>
+                    <li><a class="dropdown-item" href="Ctipo.html">TIPO</a></li>
 
                   </ul>
                 </li>
@@ -46,8 +46,8 @@
                       <b>PERFIL</b>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="region.html"target="">REGISTRO</a></li>
-                    <li><a class="dropdown-item" href="#">LOGIN</a></li>
+                    <li><a class="dropdown-item" href="registro.html"target="">REGISTRO</a></li>
+                    <li><a class="dropdown-item" href="inicioSesion.html">LOGIN</a></li>
                   </ul>
                 </li>
               </ul>
@@ -59,6 +59,52 @@
 </header>
 
 <!--FIN HEADER-->
+
+<form class="row g-3">
+  <h1>
+  <div class="col-md-2">
+    <label for="validationDefault01" class="form-label">First name</label>
+    <input type="text" class="form-control" id="validationDefault01" required>
+  </div>
+  <div class="col-md-2">
+    <label for="validationDefault02" class="form-label">Last name</label>
+    <input type="text" class="form-control" id="validationDefault02" required>
+  </div>
+  <div class="col-md-2">
+    <label for="validationDefaultUsername" class="form-label">Username</label>
+    <div class="input-group">
+      <span class="input-group-text" id="inputGroupPrepend2">@</span>
+      <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <label for="validationDefault03" class="form-label">City</label>
+    <input type="text" class="form-control" id="validationDefault03" required>
+  </div>
+  <div class="col-md-2">
+    <label for="validationDefault04" class="form-label">State</label>
+    <select class="form-select" id="validationDefault04" required>
+      <option selected disabled value="">Choose...</option>
+      <option>...</option>
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label for="validationDefault05" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="validationDefault05" required>
+  </div>
+  <div class="col-md-2">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+      <label class="form-check-label" for="invalidCheck2">
+        Agree to terms and conditions
+      </label>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+  </h1>
+</form>
 
 
 
