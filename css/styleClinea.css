@@ -1,5 +1,5 @@
 body{
-    background-image: radial-gradient(#0397AB,#005A82,#0A323C,#091428);}
+    background-color: white;}
     
     
     /* COLOR NAVBAR menu celu*/
@@ -9,13 +9,13 @@ body{
     
     /* COLOR NAVBAR*/
     .navbar{
-        background-image: linear-gradient(bottom, #091428,  #0A323C);
+        background-color: black;
     }
     
     
     /* cambio color letras navbar*/
     #white{
-     color: gray;}
+    color: gray;}
     
     #white:hover{color: white;
         transform: translateY(-2px);
@@ -84,4 +84,28 @@ img {
     background-image: linear-gradient(#010A13,#1E282D,#1E2328)}
 .card:hover{transform: translateY(-10px);
 transition: 0.6s;}
+
+
+.iframe-container {
+    
+    position: relative;
+    width: 50%; /* Ajusta el tamaño del contenedor según tus necesidades */
+    margin: 0 auto; /* Centra horizontalmente el contenedor */
+    overflow: hidden; /* Evita que el iframe sobresalga del contenedor */
+}
+            
+.iframe-container iframe {
+    
+    margin-bottom: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+}
+@media screen and (max-width: 768px) {
+    .iframe-container {
+    width: 90%; /* Reducir el tamaño del contenedor en pantallas más pequeñas */
+}
+}
+box-shadow-lg: ;
 

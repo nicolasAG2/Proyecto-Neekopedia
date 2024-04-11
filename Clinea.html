@@ -11,22 +11,25 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
       </head>
 <body>
-<!--BARRA DE NAVEGACION-->
-<div class="row">
-  <div class="col-4">
-    <div id="menu" class="list-group" style="position: fixed; z-index: 500;opacity: 0.6;" >
-      <a class="list-group-item list-group-item-action" href="#">INICIO</a>
-      <a class="list-group-item list-group-item-action" href="#top">TOP</a>
-      <a class="list-group-item list-group-item-action" href="#jg">JG</a>
+
+  <div class="row">
+    <div class="col-4">
+      <div id="menu" class="list-group" style="position: fixed; z-index: 500;opacity: 0.6;" >
+        <a class="list-group-item list-group-item-action" href="#">INICIO</a>
+        <a class="list-group-item list-group-item-action" href="#top">TOP</a>
+        <a class="list-group-item list-group-item-action" href="#jg">JG</a>
+        <a class="list-group-item list-group-item-action" href="#mid">MID</a>
+      </div>
+    </div>
+    <div class="col-8">
+      <div data-bs-spy="scroll" data-bs-target="#menu" data-bs-smooth-scroll="true" ></div>
     </div>
   </div>
-  <div class="col-8">
-    <div data-bs-spy="scroll" data-bs-target="#menu" data-bs-smooth-scroll="true" ></div>
-  </div>
-</div>
+
+<!--BARRA DE NAVEGACION-->
 <header>
     <nav class="navbar navbar-expand-xl ">
-        <div class="container-fluid">
+        <div class="container-fluid" >
         <a class="navbar-brand"  href="index.html"><img width="200px" id="logoP" src="imgcomun/NEEKOPEDIA-ultima.png">
         </a>
         <button  class="navbar-toggler custom-navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,17 +70,22 @@
     </div>
     
   </nav>
-  <hr>
+
 </header>
 <!--FIN HEADER-->
 
+<h1 style="margin-top: 20px; margin-bottom: 20px; text-align: center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"><i>NOVEDADES</i></h1>
+<div class="iframe-container" >
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/tSEWZtT8M1c?si=KS3des83qtvmOBTy" title="YouTube video player" 
+  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
+</div>
 
 
 <!--INICIO CARTAS-->
 <!--TOP-->
-<img id="top" src="imgChamps/TOP-9-4-2024.png" style="height: 60px; margin-left: 60px;">
+<img id="top" src="imgChamps/TOP-9-4-2024.png" style="height: 60px; margin-left: 60px; margin-top: 30px;">
 <div class="container-fluid" style="margin-top: 20px; ">
   <div class="row">
       <div class="col">
@@ -362,6 +370,151 @@
   </div>
 </div>
 <!--FIN JUNGLER-->
+<!--MID-->
+<img id="mid" src="imgChamps/MID-9-4-2024.png" style="height: 60px; margin-left: 60px;">
+<div class="container-fluid" style="margin-top: 20px; ">
+  <div class="row">
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/akali.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Akali</h5>
+            <p class="card-text">LA ASESINA SIGILOSA</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/anivia.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Anivia</h5>
+            <p class="card-text">LA CRIOFÉNIX</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;" >
+          <img src="imgChamps/annie.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Annie</h5>
+            <p class="card-text">LA HIJA DE LA OSCURIDAD</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img  src="imgChamps/aurelion.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Aurelion Sol</h5>
+            <p class="card-text">EL FORJADOR DE ESTRELLAS</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/azir.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Azir</h5>
+            <p class="card-text">EL EMPERADOR DE LAS ARENAS</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img  src="imgChamps/brand.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Brand</h5>
+            <p class="card-text">LA VENGANZA ARDIENTE</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      
+  </div>
+</div>
+
+<div class="container-fluid" style="margin-top: 20px; ">
+  <div class="row">
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/fizz.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Fizz</h5>
+            <p class="card-text">EL GAMBERRO DE LAS MAREAS</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/heimer.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Heimerdinger</h5>
+            <p class="card-text">EL INVENTOR VENERADO</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;" >
+          <img src="imgChamps/kassa.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Kassadin</h5>
+            <p class="card-text">EL CAMINANTE DEL VACÍO</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img  src="imgChamps/kata.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Katarina</h5>
+            <p class="card-text">LA CUCHILLA SINIESTRA</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/leblanc.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">LeBlanc</h5>
+            <p class="card-text">LA EMBAUCADORA</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img  src="imgChamps/yasuo.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Yasuo</h5>
+            <p class="card-text">LA ESPADA SIN HONOR</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      
+  </div>
+</div>
+
+<!--FIN MID-->
 
 
 <!--FIN CARTAS-->
@@ -371,10 +524,9 @@
 
 <!--FOOTER-->
 <footer>
-  
+  <h3 style="color: gray; font-size: large; text-align: center; margin-top: 10px;">CONTACTANOS</h3>
   <div class="footer">
-    <h3 style="color: gray; font-size: large; text-align: center; margin-top: 5px;">CONTACTANOS</h3>
-    <a href="#" class="icono1">
+    <a href="https://web.facebook.com/LeagueofLegendsLatino?locale=es_LA" class="icono1">
       <i class="fa-brands fa-square-facebook"></i>
     </a>
     <a href="#" class="icono2">

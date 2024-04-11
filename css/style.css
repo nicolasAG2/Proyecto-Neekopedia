@@ -1,17 +1,20 @@
 /*----COMUN---------*/
     /*----BODY----*/
-    body{
-    background-image: radial-gradient(#0397AB,#005A82,#0A323C,#091428);}
+    body{ background-color: white;}
+    /*----background-image: radial-gradient(#0397AB,#005A82,#0A323C,#091428);}----*/
     /*----FIN BODY----*/
     /*----NAVBAR----*/
     /* COLOR NAVBAR menu celu*/
+    h1{color: black;
+    }
+
     .custom-navbar-toggler {
         background-color: rgb(190, 188, 188); /* Cambia el color del texto */
     }
 
     /* COLOR NAVBAR*/
     .navbar{
-        background-image: linear-gradient(bottom, #091428,  #0A323C);
+        background-color: rgb(20, 18, 18);
     }
 
 
@@ -108,3 +111,25 @@ hr{color: black; }
 
 #member:hover{transform: translateY(-10px);
             transition: 0.4s;}
+
+.iframe-container {
+    
+    position: relative;
+    width: 50%; /* Ajusta el tamaño del contenedor según tus necesidades */
+    margin: 0 auto; /* Centra horizontalmente el contenedor */
+    overflow: hidden; /* Evita que el iframe sobresalga del contenedor */
+}
+            
+.iframe-container iframe {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+}
+    @media screen and (max-width: 768px) {
+        .iframe-container {
+        width: 90%; /* Reducir el tamaño del contenedor en pantallas más pequeñas */
+    }
+}
