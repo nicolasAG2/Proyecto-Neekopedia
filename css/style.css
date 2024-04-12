@@ -133,3 +133,11 @@ hr{color: black; }
         width: 90%; /* Reducir el tamaño del contenedor en pantallas más pequeñas */
     }
 }
+
+ /* cambios bootstrap no aplicados */
+ /*
+.navbar{
+    --bs-border-radius: 30px;
+    --bs-background-color: ;
+}
+ */
