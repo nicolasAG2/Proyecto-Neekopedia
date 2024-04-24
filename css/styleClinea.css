@@ -74,7 +74,7 @@ img {
 }
 
 .card{
-    height: 400px;
+    height: 380px;
     color: gray;
     justify-content: center;
     align-items: center;
@@ -107,5 +107,31 @@ transition: 0.6s;}
     width: 90%; /* Reducir el tamaño del contenedor en pantallas más pequeñas */
 }
 }
-box-shadow-lg: ;
 
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: black;
+    border: solid 1px #c3c3c3;
+    color: gray;
+    position: absolute;
+    z-index: 9999;
+}
+
+#flip{
+    width: 30px;
+    height: 35px;
+    position: relative;
+    
+    
+}
+
+#panel {
+    padding: 1px;
+    display: none;
+    margin: 0;
+    width: 50px;
+}
+
+a{text-decoration: none;
+color: gray;}
