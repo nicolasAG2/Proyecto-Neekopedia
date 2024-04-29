@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+        <title>NEEKOPEDIA</title>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="css/styleCtipo.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+      </head>
+<body>
+
+<!--BARRA DE NAVEGACION-->
+<header>
+  <nav class="navbar navbar-expand-xl ">
+    <div class="container-fluid">
+        <a class="navbar-brand"  href="index.html"><img width="200px" id="logoP" src="imgcomun/NEEKOPEDIA-ultima.png">
+        </a>
+        <button  class="navbar-toggler custom-navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" id="white" aria-current="page" href="index.html"><b>INICIO</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="white" href="region.html"><b>REGIONES</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="white" href="fanArt.html"><b>FANARTS</b></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <b>CAMPEONES</b>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Clinea.html">LINEA</a></li>
+                    <li><a class="dropdown-item" href="Ctipo.html">TIPO</a></li>
+
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <b>PERFIL</b>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="registro.html"target="">REGISTRO</a></li>
+                    <li><a class="dropdown-item" href="inicioSesion.html">LOGIN</a></li>
+                  </ul>
+                </li>
+              </ul>
+        </div>
+    </div>
+    
+  </nav>
+  <hr>
+</header>
+
+<!--FIN HEADER-->
+
+<div id="flip" style="position: fixed;"><i class="fa-solid fa-arrow-right"></i>
+  <div id="panel">
+    <a  href="#">INICIO</a>
+    <a  href="#apoyo">APOYO</a>
+    <a  href="#asesino">ASESINO</a>
+    <a  href="#luchador">LUCHADOR</a>
+    <a  href="#mago">MAGO</a>
+    <a  href="#tanque">TANQUE</a>
+    <a  href="#tirador">TIRADOR</a>
+  </div>
+</div>
+
+
+
+
+
+<!--INICIO CARTAS-->
+<!--INICIO APOYO-->
+
+<img id="apoyo" src="imgChamps/APOYO-26-04-2024.png" style="height: 60px; margin-left: 60px; margin-top: 30px;">
+<div class="container-fluid" style="margin-top: 20px; ">
+  <div class="row">
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/Bardo.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Bardo</h5>
+            <p class="card-text">EL GUARDIÁN ERRANTE</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/Braum.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Braum</h5>
+            <p class="card-text">EL CORAZÓN DE FREDLJORD</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;" >
+          <img src="imgChamps/Ivern.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ivern</h5>
+            <p class="card-text">EL PADRE ARBORESCENTE</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img  src="imgChamps/Nami.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Nami</h5>
+            <p class="card-text">LA INVOCADORA DE MAREAS</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/Pyke.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pyke</h5>
+            <p class="card-text">EL DESTRIPADOR DE LOS PUERTOS</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img  src="imgChamps/Rakan.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Rakan</h5>
+            <p class="card-text">EL ENCANTADOR</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      
+  </div>
+</div>
+<div class="container-fluid" style="margin-top: 20px; ">
+  <div class="row">
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/Renata Glasc.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Renata Glasc</h5>
+            <p class="card-text">LA BARONESA QUÍMICA</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/Sona.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Sona</h5>
+            <p class="card-text">LA VIRTUOSA DE LAS CUERDAS</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;" >
+          <img src="imgChamps/Soraka.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Soraka</h5>
+            <p class="card-text">LA HIJA DE LAS ESTRELLAS</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img  src="imgChamps/Taric.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Taric</h5>
+            <p class="card-text">EL ESCUDO DE VALORAN</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/Thresh.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Thresh</h5>
+            <p class="card-text">EL CARCELERO IMPLACABLE</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img  src="imgChamps/Yumi.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Yumi</h5>
+            <p class="card-text">LA GATA MÁGICA</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      
+  </div>
+</div>
+
+<!--FIN APOYO-->
+
+<!--INICIO ASESINO-->
+
+<img id="asesino" src="imgChamps/ASESINO-26-04-2024.png" style="height: 60px; margin-left: 60px; margin-top: 30px;">
+<div class="container-fluid" style="margin-top: 20px; ">
+  <div class="row">
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/akali.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">akali</h5>
+            <p class="card-text">LA ASESINA SIGILOSA</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/ekko.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ekko</h5>
+            <p class="card-text">EL CORAZÓN DE FREDLJORD</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;" >
+          <img src="imgChamps/evelynn.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Evelynn</h5>
+            <p class="card-text">EL ABRAZO AGÓNICO</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img  src="imgChamps/kassa.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Kassadin</h5>
+            <p class="card-text">EL CAMINANTE DEL VACIO</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/kata.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Katarina</h5>
+            <p class="card-text">LA CUCHILLA SINIESTRA</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img  src="imgChamps/Kha'zix.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Kha'zix</h5>
+            <p class="card-text">EL SAQUEADOR DEL VACIO</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      
+  </div>
+</div>
+<div class="container-fluid" style="margin-top: 20px; ">
+  <div class="row">
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/Naafiri.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Naafiri</h5>
+            <p class="card-text">LA SABUESA DE LAS MIL DENTELLADAS</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/maestroyi.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Maestro Yi</h5>
+            <p class="card-text">EL ESPADACHÍN WUJU</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;" >
+          <img src="imgChamps/rengar.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Rengar</h5>
+            <p class="card-text">EL ACECHADOR ORGULLOSO</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img  src="imgChamps/Talon.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Talon</h5>
+            <p class="card-text">LA SOMBRA DE LA ESPADA</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/Yone.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Yone</h5>
+            <p class="card-text">EL IMPERECEDERO</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img  src="imgChamps/Zed.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Zed</h5>
+            <p class="card-text">EL MAESTRO DE LAS SOMBRAS</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      
+  </div>
+</div>
+
+<!--FIN ASESINO-->
+
+<!--INICIO LUCHADOR-->
+
+<img id="luchador" src="imgChamps/LUCHADOR-26-04-2024.png" style="height: 60px; margin-left: 60px; margin-top: 30px;">
+<div class="container-fluid" style="margin-top: 20px; ">
+  <div class="row">
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/Bel'veth.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Bel'veth</h5>
+            <p class="card-text">LA EMPERATRIS DEL VACÍO</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/diana.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Diana</h5>
+            <p class="card-text">LA DESDÉN DE LA LUNA</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;" >
+          <img src="imgChamps/gnar.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Gnar</h5>
+            <p class="card-text">EL ESLABÓN PERDIDO</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img  src="imgChamps/Gwen.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Gwen</h5>
+            <p class="card-text">LA COSTURERA CONSAGRADA</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/illaoi.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Illaoi</h5>
+            <p class="card-text">LA SACERDOTISA DEL KRAKEN</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img  src="imgChamps/irelia.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Irelia</h5>
+            <p class="card-text">LA DANZA DE LAS CUCHILLAS</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      
+  </div>
+</div>
+<div class="container-fluid" style="margin-top: 20px; ">
+  <div class="row">
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/Kayn.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Kayn</h5>
+            <p class="card-text">LA GUADAÑA DE LAS SOMBRAS</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/Mordekaiser.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Mordekaiser</h5>
+            <p class="card-text">LA PESADILLA DEL HIERRO</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;" >
+          <img src="imgChamps/Pantheon.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pantheon</h5>
+            <p class="card-text">LA LANZA INQUEBRANTABLE</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img  src="imgChamps/Rumble.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Rumble</h5>
+            <p class="card-text">LA AMENAZA MECÁNICA</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/Sett.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Sett</h5>
+            <p class="card-text">EL JEFE</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img  src="imgChamps/Vi.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Vi</h5>
+            <p class="card-text">LA AGENTE DE PILTOVER</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      
+  </div>
+</div>
+
+<!--FIN LUCHADOR-->
+
+<!--INICIO MAGO-->
+
+<img id="mago" src="imgChamps/MAGO-26-04-2024.png" style="height: 60px; margin-left: 60px; margin-top: 30px;">
+<div class="container-fluid" style="margin-top: 20px; ">
+  <div class="row">
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/Ahri.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ahri</h5>
+            <p class="card-text">LA MUJER ZORRO DE NUEVE COLAS</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/Karthus.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Karthus</h5>
+            <p class="card-text">LA VOZ DE LA MUERTO</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;" >
+          <img src="imgChamps/Kennen.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Kennen</h5>
+            <p class="card-text">EL CORAZÓN DE LA TEMPESTAD</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img  src="imgChamps/leblanc.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Leblanc</h5>
+            <p class="card-text">LA EMBAUCADORA</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/Lissandra.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Lissandra</h5>
+            <p class="card-text">LA BRUJA DEL HIELO</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img  src="imgChamps/Neeko.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Neeko</h5>
+            <p class="card-text">LA CAMALEONA CURIOSA</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      
+  </div>
+</div>
+<div class="container-fluid" style="margin-top: 20px; ">
+  <div class="row">
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/Orianna.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Orianna</h5>
+            <p class="card-text">LA DAMA MECÁNICA</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/Ryze.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ryze</h5>
+            <p class="card-text">EL HECHICERO RÚNICO</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;" >
+          <img src="imgChamps/Sylas.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Sylas</h5>
+            <p class="card-text">EL DESENCADENADO</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img  src="imgChamps/Syndra.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Syndra</h5>
+            <p class="card-text">LA SOBERANA OSCURA</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/Veigar.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Veigar</h5>
+            <p class="card-text">EL PEQUEÑO MAESTRO DEL MAL</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img  src="imgChamps/Viktor.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Viktor</h5>
+            <p class="card-text">EL HERALDO DE LAS MÁQUINAS</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      
+  </div>
+</div>
+
+
+
+<!--FIN MAGO-->
+
+<!--INICIO TANQUE-->
+
+
+<img id="tanque" src="imgChamps/TANQUE-26-04-2024.png" style="height: 60px; margin-left: 60px; margin-top: 30px;">
+<div class="container-fluid" style="margin-top: 20px; ">
+  <div class="row">
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/Blitzcrank.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Blitzcrank</h5>
+            <p class="card-text">EL GRAN GÓLEN DE VAPOR</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/Galio.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Galio</h5>
+            <p class="card-text">EL COLOSO</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;" >
+          <img src="imgChamps/Jarvan IV.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Jarvan IV</h5>
+            <p class="card-text">EL EJEMPLO DE DEMACIA</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img  src="imgChamps/Leona.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Leona</h5>
+            <p class="card-text">EL AMANECER RADIANTE</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/Maokai.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Maokai</h5>
+            <p class="card-text">EL TREANT RETORCIDO</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img  src="imgChamps/Nautilus.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Nautilus</h5>
+            <p class="card-text">EL TITÁN AVISMAL</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      
+  </div>
+</div>
+<div class="container-fluid" style="margin-top: 20px; ">
+  <div class="row">
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/nunu.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Nunu Y Willump</h5>
+            <p class="card-text">UN NIÑO Y SI YETI</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/Ornn.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ornn</h5>
+            <p class="card-text">LAS LLAMAS DE LA FORJA</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;" >
+          <img src="imgChamps/Rammus.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Rammus</h5>
+            <p class="card-text">EL ARMADILLO</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img  src="imgChamps/Sejuani.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Sejuani</h5>
+            <p class="card-text">LA FURIA DEL NORTE</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/Sion.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Sion</h5>
+            <p class="card-text">EL COLOSO NO MUERTO</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img  src="imgChamps/Zac.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Zac</h5>
+            <p class="card-text">EL ARMA SECRETA</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      
+  </div>
+</div>
+
+<!--FIN TANQUE-->
+
+<!--INICIO TIRADOR-->
+
+
+<img id="tirador" src="imgChamps/TIRADOR-26-04-2024.png" style="height: 60px; margin-left: 60px; margin-top: 30px;">
+<div class="container-fluid" style="margin-top: 20px; ">
+  <div class="row">
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/Akshan.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Akshan</h5>
+            <p class="card-text">EL CENTINELA REBELDE</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/Aphelios_0 (2).jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Aphelios</h5>
+            <p class="card-text">EL ARMA DE LOS FIELES</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;" >
+          <img src="imgChamps/Ezreal.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ezreal</h5>
+            <p class="card-text">EL EXPLORADOR PRÓDIGIO</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img  src="imgChamps/graves.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Graves</h5>
+            <p class="card-text">EL FORAJIDO</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/Jhin.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Jhin</h5>
+            <p class="card-text">EL VIRTUOSO</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img  src="imgChamps/Jinx.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Jinx</h5>
+            <p class="card-text">LA BALA PERDIDA</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      
+  </div>
+</div>
+<div class="container-fluid" style="margin-top: 20px; ">
+  <div class="row">
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/Kai'sa.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Kai'sa</h5>
+            <p class="card-text">LA HIJA DEL VACIO</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/Kindred.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Kindred</h5>
+            <p class="card-text">LOS CAZODRES ETERNOS</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;" >
+          <img src="imgChamps/Kog'maw(2).jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Kog'maw</h5>
+            <p class="card-text">LA BOCA DEL ABISMO</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img  src="imgChamps/Quinn.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Quinn</h5>
+            <p class="card-text">LAS ALAS DE DEMACIA</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imgChamps/Senna.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Senna</h5>
+            <p class="card-text">LA REDENTORA</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img  src="imgChamps/Xayah.jpg" class="fixed-size card text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Xayah</h5>
+            <p class="card-text">LA REBELDE</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      
+  </div>
+</div>
+
+<!--FIN TIRADOR-->
+
+<!--FOOTER-->
+<footer>
+  
+  <div class="footer">
+    <h3 style="color: gray; font-size: large; text-align: center; margin-top: 5px;">CONTACTANOS</h3>
+    <a href="https://web.facebook.com/LeagueofLegendsLatino?locale=es_LA" class="icono1">
+      <i class="fa-brands fa-square-facebook"></i>
+    </a>
+    <a href="#" class="icono2">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="#" class="icono3">
+      <i class="fa-regular fa-envelope"></i>
+    </a>
+  </div>
+  <div>
+    <h2 style="font-size: medium; color: gray; text-align: center;">© NeekoPedia 2024</h2> 
+  </div>
+</footer>
+<!--FIN FOOTER-->
+
+<script src="script.js"></script>
+</body>
+</html>
