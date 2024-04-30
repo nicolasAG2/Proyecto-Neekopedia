@@ -7,9 +7,9 @@ body{
         background-color: rgb(190, 188, 188); /* Cambia el color del texto */
     }
     
-    /* COLOR NAVBAR*/
     .navbar{
-        background-image: linear-gradient(bottom, #091428,  #0A323C);
+        background-image: linear-gradient(#010A13,#1E282D,#1E2328);
+    
     }
     
     

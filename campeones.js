@@ -54,6 +54,11 @@ function mostrarChamps() {
     });
 }
 
+
+
+
+//#ff6600;
+//#ffa500;
 //Mostrar campeones que sean fighters
 function mostrarFighters() {
 

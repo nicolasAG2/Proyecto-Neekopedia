@@ -3,6 +3,9 @@
 
 }
 
+.custom-navbar-toggler {
+    background-color: rgb(190, 188, 188); /* Cambia el color del texto */
+}
     /* cambio color letras navbar*/
     #white{
         color: gray;}
@@ -53,60 +56,74 @@ body {
     background-color: white;
 }
 
-.champion a{
-    color: white;
-    border: 1px solid white;
-    border-radius: 2px;
-    padding: 2px;
-}
-.champion a{
-    color: white;
-    border: 1px solid white;
-    border-radius: 2px;
-    padding: 2px;
-}
-a:hover{
-    transform: scale(1.2) translate(5px, -5px); /* Cambia el tamaño y mueve el elemento */
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
-    transition: 0.3s;
-}
+
 .champion {
-    border: 2px solid black;
-    border-radius: 2px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
     margin: 10px;
-
     text-align: center;
-    color: gray;
-    background-image: linear-gradient(#010A13,#1E282D,#1E2328);
-    max-width: auto;
     
+    background-color: #1f1f1f;
+    max-width: auto;   
+    transition: background-color 0.7s ease-in-out, border-radius 0.7s ease-in-out;
 }
+.champion:hover{
+    transform: translateY(-3px);
+    transition: 0.7s;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    transition: 0.7s;
+}
+.champion a{
+    background-color: #ffa500;;
+    color: rgb(56, 55, 55);
+    border-radius: 6px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+
+}
+.champion a:hover{
+    
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
+    transition: 0.3s;
+    background-color: #ff6600;
+}
+
 .champion img {
-    justify-content: center;
-    text-align: center;
-    max-width: 500px;
-    max-height: 200px;
-    color: gray;
-    justify-content: center;
-    align-items: center;
-    padding: 3px;
-    border: 0,5px solid #3C3C41;
-    border-radius: 5px;
+    width: 100%;
+    border-radius: 10px;
     margin-bottom: 10px;
     
     
 }
 
+
 .champion h1{
-    border: 2px solid black;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 300px;
+    color: white;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    
+}
+.champion h4{
+    color: #ffa500;
+    font-size: 1.2em;
+    
+}
+.champion p{
+    color: rgb(196, 194, 194);
+    font-size: 1.2em;
     
 }
 
 .iframe-container {
     
     position: relative;
-    width: 50%; /* Ajusta el tamaño del contenedor según tus necesidades */
+    width: 65%; /* Ajusta el tamaño del contenedor según tus necesidades */
     margin: 0 auto; /* Centra horizontalmente el contenedor */
     overflow: hidden; /* Evita que el iframe sobresalga del contenedor */
 }
@@ -126,30 +143,49 @@ a:hover{
 }
 
 
-#panel, #flip {
-    padding: 5px;
+#panel  {
     text-align: center;
-font-size: 15px;
+    background-color: white;
     color: black;
-    margin-left: 30px;
+    margin-left: 5%;
+    margin-bottom: 5px;
+    padding: 10px;
+    width: 90%;
+    display: block; /* Asegura que la imagen se comporte como un bloque */
+    margin-left: auto; /* Centra la imagen horizontalmente */
+    margin-right: auto; /* Centra la imagen horizontalmente */
+    font-size: 15px;
+    display: none;
+}
+#panel a{
+    color: black;
+    text-decoration: none;
+    margin-bottom: 5px;
     
 }
+
 
 #flip{
-    width: 30px;
-    height: 35px;
+    text-align: center;
+    background-color: #ffa500;
     position: relative;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
+    padding: 2px;
+    width: 70%;
+    display: block; /* Asegura que la imagen se comporte como un bloque */
+    margin-left: auto; /* Centra la imagen horizontalmente */
+    margin-right: auto; /* Centra la imagen horizontalmente */
+    font-size: 30px;
+    transition: background-color 0.7s ease-in-out, border-radius 0.7s ease-in-out;
+}
+#flip:hover{
+    background-color: #ff6600;
+    transition: 1s;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
     
 }
 
-#panel {
-    padding: 1px;
-    display: none;
-    margin: 0;
-    width: 150px;
-    background-color: black;
-}
 
-a{text-decoration: none;
-    color: gray;}
+
+
