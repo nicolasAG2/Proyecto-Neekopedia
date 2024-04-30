@@ -1,0 +1,19 @@
+body{
+    background-image: radial-gradient(#0397AB,#005A82,#0A323C,#091428);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;}
+    
+    
+
+.login-form {
+        max-width: 400px;
+        width: 100%;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+}
+.inicio:hover{transform: translateY(-5px);
+transition: 0.6s;}
+    
