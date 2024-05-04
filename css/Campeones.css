@@ -63,7 +63,6 @@ body {
     padding: 15px;
     margin: 10px;
     text-align: center;
-    
     background-color: #1f1f1f;
     max-width: auto;   
     transition: background-color 0.7s ease-in-out, border-radius 0.7s ease-in-out;
@@ -81,10 +80,8 @@ body {
     border-radius: 6px;
     padding: 5px 10px;
     transition: background-color 0.3s ease;
-
 }
 .champion a:hover{
-    
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
     transition: 0.3s;
     background-color: #ff6600;
@@ -94,8 +91,6 @@ body {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 10px;
-    
-    
 }
 
 
@@ -107,21 +102,17 @@ body {
     display: block; 
     margin-left: auto; 
     margin-right: auto; 
-    
 }
 .champion h4{
     color: #ffa500;
-    font-size: 1.2em;
-    
+    font-size: 1.2em; 
 }
 .champion p{
     color: rgb(196, 194, 194);
     font-size: 1.2em;
-    
 }
 
 .iframe-container {
-    
     position: relative;
     width: 65%; /* Ajusta el tamaño del contenedor según tus necesidades */
     margin: 0 auto; /* Centra horizontalmente el contenedor */
@@ -129,7 +120,6 @@ body {
 }
             
 .iframe-container iframe {
-    
     margin-bottom: 20px;
     top: 0;
     left: 0;
@@ -139,10 +129,13 @@ body {
 @media screen and (max-width: 768px) {
     .iframe-container {
     width: 90%; /* Reducir el tamaño del contenedor en pantallas más pequeñas */
-}
+    }
 }
 
+/*FILTROS*/
+#flip {    
 
+}
 #panel  {
     text-align: center;
     background-color: white;
@@ -151,11 +144,13 @@ body {
     margin-bottom: 5px;
     padding: 10px;
     width: 90%;
-    display: block; /* Asegura que la imagen se comporte como un bloque */
-    margin-left: auto; /* Centra la imagen horizontalmente */
-    margin-right: auto; /* Centra la imagen horizontalmente */
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
     font-size: 15px;
     display: none;
+    border-radius: 10px;
+
 }
 #panel a{
     color: black;
@@ -166,15 +161,16 @@ body {
 
 
 #flip{
+    position: sticky;
+    top: 0;
     text-align: center;
     background-color: #ffa500;
-    position: relative;
+    z-index: 1000;
     margin-bottom: 50px;
     padding: 2px;
-    width: 70%;
-    display: block; /* Asegura que la imagen se comporte como un bloque */
-    margin-left: auto; /* Centra la imagen horizontalmente */
-    margin-right: auto; /* Centra la imagen horizontalmente */
+    width: 70%; 
+    margin-left: auto; 
+    margin-right: auto; 
     font-size: 30px;
     transition: background-color 0.7s ease-in-out, border-radius 0.7s ease-in-out;
 }

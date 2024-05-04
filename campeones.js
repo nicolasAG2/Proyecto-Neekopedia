@@ -11,6 +11,7 @@ function mostrarChamps() {
         // Iterar sobre los datos de los campeones y agregar cada grupo de tres a un div
         let championsInRow = 0;
         let rowDiv;
+        
         for (const champion in championsData) {
             if (championsInRow === 0) {
                 // Si no hay ningún campeón en la fila actual, crea un nuevo div de fila
@@ -54,11 +55,6 @@ function mostrarChamps() {
     });
 }
 
-
-
-
-//#ff6600;
-//#ffa500;
 //Mostrar campeones que sean fighters
 function mostrarFighters() {
 
@@ -82,7 +78,6 @@ function mostrarFighters() {
                 
                 const championName = championsData[champion].name;
                 const championTitle = championsData[champion].title;
-                const championTags = championsData[champion].tags[0];
                 const championDesc = championsData[champion].blurb;
                 const championImage = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion}_0.jpg`;
                 const fighterColDiv =  document.createElement('div');
@@ -138,7 +133,7 @@ function mostrarMagos() {
                 rowDiv = document.createElement('div');
                 rowDiv.classList.add('row');
             }
-
+            
             const championName = championsData[champion].name;
             const championTitle = championsData[champion].title;
             const championTags = championsData[champion].tags[0];
@@ -200,10 +195,9 @@ function mostrarAsesinos() {
                 rowDiv = document.createElement('div');
                 rowDiv.classList.add('row');
             }
-
+            
             const championName = championsData[champion].name;
             const championTitle = championsData[champion].title;
-            const championTags = championsData[champion].tags[0];
             const championDesc = championsData[champion].blurb;
             const championImage = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion}_0.jpg`;
             const AssassinColDiv =  document.createElement('div');
@@ -358,8 +352,6 @@ function mostrarSoportes() {
     });
     }
 
-
-
 //Mostrar campeones que sean Tiradores
 function mostrarTiradores() {
     
@@ -418,7 +410,6 @@ function mostrarTiradores() {
     console.error('Error al obtener datos de la API:', error);
     });
     }
-
 
 document.addEventListener('DOMContentLoaded', function() {
     mostrarChamps();
