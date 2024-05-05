@@ -14,14 +14,14 @@
     <img src="imgcomun/dragon.jpg" style="position: absolute; height: 100%; width: 100%; opacity: 0.7;">
     <div class="login-form" style="z-index: 1000;background-image: radial-gradient(#005A82,#0A323C,#091428); opacity: 0.9;">
         <h2 class="text-center mb-4" style="color: rgb(190, 188, 188);">Inicio de Sesión</h2>
-        <form class="row g-3 needs-validation was-validated" novalidate="">
+        <form action="" method="post" id="form">
             <div class="mb-3">
-                <label style="color: rgb(190, 188, 188);" for="inputNombreUsu" class="form-label">Nombre de usuario</label>
-                <input type="text" placeholder="Ingrese nombre de usuario" class="form-control" id="inputNombreUsu" aria-describedby="emailHelp" required>
+                <label style="color: rgb(190, 188, 188);" for="inputEmail" class="form-label">Nombre de usuario</label>
+                <input type="text" placeholder="Ingrese nombre de usuario" class="form-control" name="" id="inputEmail" required>
             </div>
             <div class="mb-3">
                 <label style="color: rgb(190, 188, 188);" for="inputPassword" class="form-label">Contraseña</label>
-                <input type="password" placeholder="Ingrese Contraseña" class="form-control" id="inputPassword" required>
+                <input type="password" placeholder="Ingrese Contraseña" class="form-control" name="" id="inputPassword" required>
             </div>
             <div class="d-grid gap-2">
                 <button type="submit" class="btn btn-primary">Iniciar Sesión</button>

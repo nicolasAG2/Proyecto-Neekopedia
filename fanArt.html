@@ -59,24 +59,20 @@
 <h1 style="text-align: center;margin-top: 20px; "><i>FANARTS</i></h1>
 <hr>
 <div class="footer">
-  
-  <form class="needs-validation was-validated" novalidate="" action="/upload" method="post" enctype="multipart/form-data">
-      <div class="mb-3">
-          <label for="imageUpload" class="form-label">Selecciona el arte que deseas subir:</label>
-          <hr>
+  <form action="" method="post" id="form" enctype="multipart/form-data">
+      <div class="mb-3">        
           <input type="file" class="form-control" id="imageUpload" name="image" accept="image/*" required>
+          <hr>
       </div>
-            <input type="text" placeholder="Ingrese nombre del fanArt" class="form-control" id="imageUpload" aria-describedby="emailHelp" required>
-            <hr>
+          <input type="text" placeholder="Ingrese nombre del fanArt" class="form-control" id="nombreImg" required>  
+          <hr>   
       <div class="d-grid gap-2">
           <button type="submit" class="btn btn-primary">Subir FanArts</button>
       </div>
   </form>
 </div>
 
-
 <!--FIN IMAGEN FANART-->
-
 
 <!--FOOTER-->
 <footer>
