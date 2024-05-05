@@ -133,52 +133,118 @@ h5{
 /*carrusel, titulos y texto*/
 
 /*formato para la disposicion en el bloque general*/
-.con-izq{
-    color: white;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    width: 100%;
-    padding: 0.3em;
-    align-items: flex-start;
-}
-
 .con-der{
+    overflow: auto;
     color: white;
-    display: grid;
-    grid-template-columns: 60% 40%;
+    display: block;
     width: 100%;
     padding: 0.3em;
     align-items: flex-start;
 }
-/*formato para la disposicion en el bloque general*/
-/*Marco imagen*/
-.marco{
-    display: flex;
-    padding: 0.5em;
-    border: 3px solid gray;
-    margin-top: 0.5em;
-    border-radius: 0.25em;
+.con-izq{
+    overflow: auto;
+    height: fit-content;
+    color: white;
+    display: block;
+    width: 100%;
+    padding: 0.3em;
+    align-items: flex-start;
 }
 
-.marco img{
+/*formato para la disposicion en el bloque general*/
+article{
+    margin-bottom: 1.5em;
+    border: 3px solid gray;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+/*Marco imagen*/
+.marco-izq{
+    width: 25em;
+    height: fit-content;
+    float: left;
+    display: block;
+    padding: 0.15em;
+    border: 3px solid gray;
+    margin: 0.25em;
+    border-radius: 0.5em;
+}
+.marco-der{
+    width: 25em;
+    height: fit-content;
+    float: right;
+    display: block;
+    padding: 0.15em;
+    border: 3px solid gray;
+    margin: 0.25em;
+    border-radius: 0.5em;
+}
+
+.marco-der img{
     object-fit: contain;
     max-width: 100%;
     height: auto;
+    border-radius: 0.5em;
+}
+.marco-izq img{
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5em;
 }
 /*Marco imagen*/
 
 /*parrafos*/
-.con-der:hover{
-    color: black;
-    transition: 0.5s;
-}
 .con-izq:hover{
     color: black;
     transition: 0.5s;
 }
-.text1{
+.con-der:hover{
+    color: black;
+    transition: 0.5s;
+}
+p{
     margin-left: 1.25em;
     margin-right: 1.25em;
     text-align: justify;
 }
 /*parrafos*/
+
+/*Cambio de tamaño de las imagenes y el texto por el tamaño de la pantalla*/
+@media screen and (max-width: 550px){
+    .marco-izq{
+        width: auto;
+        float: none;
+        display: block;
+        padding: 0.5em;
+        border: 3px solid gray;
+        border-radius: 0.25em;
+    }
+    .marco-der{
+        width: auto;
+        float: none;
+        display: block;
+        padding: 0.5em;
+        border: 3px solid gray;
+        border-radius: 0.25em;
+    }
+    
+    .marco-izq img{
+        object-fit: contain;
+        max-width: 100%;
+        height: auto;
+    }
+    .marco-der img{
+        object-fit: contain;
+        max-width: 100%;
+        height: auto;
+    }
+    .con-izq{
+        display: block;
+        color: black;
+    }
+    .con-der{
+        display: block;
+        color: black;
+    }
+}
