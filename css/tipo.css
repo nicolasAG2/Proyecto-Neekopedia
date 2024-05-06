@@ -9,7 +9,7 @@
 }
     /* cambio color letras navbar*/
     #white{
-        color: gray;}
+        color: white;}
         
         #white:hover{color: white;
             transform: translateY(-2px);
@@ -145,3 +145,34 @@ body {
 a{text-decoration: none;
     color: gray;}
 
+
+.champType{font-family: BeaufortforLOL; 
+    font-size: 3.5em;
+margin-left: 65px;
+
+background: linear-gradient(#C89B3C,#785A28);
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+}
+
+@font-face {
+    font-family: BeaufortforLOL;
+    src: url(Fonts/BeaufortforLOL-Heavy.ttf);
+}
+
+.tituloPag{font-family: BeaufortforLOL; 
+    font-size: 2.5em;
+    margin-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    background: linear-gradient(#C89B3C,#785A28);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;}
+
+@font-face {
+    font-family: BeaufortforLOL;
+    src: url(Fonts/BeaufortforLOL-Heavy.ttf);
+}
+.navbar-toggler-icon{background-color: white;}
+.navbar-toggler{background-color: white;}

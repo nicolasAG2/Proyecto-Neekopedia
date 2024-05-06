@@ -15,8 +15,7 @@
 <header>
   <nav class="navbar navbar-expand-xl ">
       <div class="container-fluid">
-          <a class="navbar-brand"  href="index.html"><img width="200px" id="logoP" src="imgcomun/NEEKOPEDIA-ultima.png">
-          </a>
+        <a href="index.html" style="text-decoration: none;"><h1 class="tituloPag">NEEKOPEDIA</h1></a>
           <button  class="navbar-toggler custom-navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon" ></span>
           </button>
@@ -49,12 +48,33 @@
       </div>
 
       </nav>
-      <hr>
+      
   </header>
 
 <!--FIN HEADER-->
 
+<!--INICIO IMAGEN FANART-->
+<hr>
+<h1 style="text-align: center;margin-top: 20px; "><i>FANARTS</i></h1>
+<hr>
+<div class="footer">
+  
+  <form class="needs-validation was-validated" novalidate="" action="/upload" method="post" enctype="multipart/form-data">
+      <div class="mb-3">
+          <label for="imageUpload" class="form-label">Selecciona el arte que deseas subir:</label>
+          <hr>
+          <input type="file" class="form-control" id="imageUpload" name="image" accept="image/*" required>
+      </div>
+            <input type="text" placeholder="Ingrese nombre del fanArt" class="form-control" id="imageUpload" aria-describedby="emailHelp" required>
+            <hr>
+      <div class="d-grid gap-2">
+          <button type="submit" class="btn btn-primary">Subir FanArts</button>
+      </div>
+  </form>
+</div>
 
+
+<!--FIN IMAGEN FANART-->
 
 
 <!--FOOTER-->
@@ -78,6 +98,6 @@
 </footer>
 <!--FIN FOOTER-->
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
