@@ -7,64 +7,62 @@
         <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
         <title>NEEKOPEDIA</title>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <link rel="stylesheet" href="css/styleIndex.css">
       </head>
-<body>
+<body >
 <!--BARRA DE NAVEGACION-->
 <header>
-  <nav class="navbar navbar-expand-xl ">
-    <div class="container-fluid">
-        <a class="navbar-brand"  href="index.html"><img width="200px" id="logoP" src="imgcomun/NEEKOPEDIA-ultima.png">
-        </a>
-        <button  class="navbar-toggler custom-navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon" ></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
+    <nav class="navbar navbar-dark bg-dark m-0 ">
+        <div class="container-fluid" bis_skin_checked="1" >
+          <a class="navbar-brand" href="index.html" id="tituloPag">NEEKOPEDIA</a>
+          <button class="navbar-toggler" style="margin-right: 10px;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" bis_skin_checked="1">
+            <div class="offcanvas-header" bis_skin_checked="1">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">NEEKOPEDIA</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body" bis_skin_checked="1">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" id="white" aria-current="page" href="index.html"><b>INICIO</b></a>
-                </li>
+                    <a class="nav-link " aria-current="page" href="index.html" 
+                      >Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="region.html" 
+                      >Regiones</a>
+                  </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="white" href="region.html"><b>REGIONES</b></a>
+                  <a class="nav-link " aria-current="page" href="fanArt.html" 
+                    >FanArts</a>
                 </li>
+                
                 <li class="nav-item">
-                  <a class="nav-link" id="white" href="fanArt.html"><b>FANARTS</b></a>
+                  <a class="nav-link" href="Campeones.html">Campeones</a>
                 </li>
+                <hr class="dropdown-divider">
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" id="white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <b>CAMPEONES</b>
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-user" style="margin-right: 3px;"></i>  Perfil
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="Clinea.html">LINEA</a></li>
-                    <li><a class="dropdown-item" href="Ctipo.html">TIPO</a></li>
-
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" id="white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <b>PERFIL</b>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="registro.html"target="">REGISTRO</a></li>
+                    <li><a class="dropdown-item" href="registro.html">REGISTRO</a></li>
                     <li><a class="dropdown-item" href="inicioSesion.html">LOGIN</a></li>
                   </ul>
                 </li>
               </ul>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
+            </div>
+          </div>
         </div>
-    </div>
-    
-  </nav>
-  <hr>
-</header>
+      </nav>
+  </header>
 
 <!--FIN HEADER-->
 <a href="membresia.html" style="text-decoration: none;" id="member" >
-  <h1 id="member" style="text-align: center; margin-top: 20px;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"><i>MEMBRESIAS</i></h1>
+  <h1 id="tituloPag" style="text-align: center; font-size: 2.5em;"><i>MEMBRESIAS</i></h1>
 </a>
 
 <hr>
@@ -76,17 +74,17 @@
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" >
         <div class="carousel-inner"style="border-radius: 5px;">
           <div class="carousel-item active">
-            <img src="imgcomun/Hierro.png" class="d-block w-100" alt="Freljord">
+            <img src="imgcomun/Hierro.png" class="d-block w-100" alt="Hierro">
             <div class="carousel-caption d-none d-md-block">
             </div>
           </div>
           <div class="carousel-item">
-            <img src="imgcomun/Oro.png" class="d-block w-100" alt="Jonia">
+            <img src="imgcomun/Oro.png" class="d-block w-100" alt="Oro">
             <div class="carousel-caption d-none d-md-block">
             </div>
           </div>
           <div class="carousel-item">
-            <img src="imgcomun/Diamante.png" class="d-block w-100" alt="Shurima">
+            <img src="imgcomun/Diamante.png" class="d-block w-100" alt="Diamante">
             <div class="carousel-caption d-none d-md-block">
             </div>
           </div>
@@ -107,7 +105,7 @@
 
 <!--INICIO VIDEO-->
 <hr>
-<h1 style="text-align: center;margin-top: 20px; "><i>NOVEDADES</i></h1>
+<h1 id="tituloPag2" style="text-align: center; font-size: 2.5em;">NOVEDADES</h1>
 <hr>
 <div class="iframe-container">
   <iframe src="https://www.youtube.com/embed/oWGLO38ZR0Q?si=HNHmYmR9XutkwTGu" 
@@ -121,7 +119,7 @@
 
 <hr>
 <a href="fanArt.html" style="text-decoration: none;">
-  <h1 style="text-align: center; margin-top: 20px; " id="member"><i>FANARTS</i></h1>
+  <h1 style="text-align: center; margin-top: 20px; font-size: 2.5em; " id="tituloPag"><i>FANARTS</i></h1>
 </a>
 
 <hr>
@@ -233,22 +231,22 @@
 
 
 <!--FOOTER-->
-<footer>
-  <h3 style="color: gray; font-size: large; text-align: center; margin-top: 10px;">CONTACTANOS</h3>
-  <div class="footer">
+<footer >
+<h3 class="footerText">CONTACTANOS</h3>
+<div class="footer">
     <a href="https://web.facebook.com/LeagueofLegendsLatino?locale=es_LA" class="icono1">
-      <i class="fa-brands fa-square-facebook"></i>
+    <i class="fa-brands fa-square-facebook"></i>
     </a>
     <a href="#" class="icono2">
-      <i class="fa-brands fa-whatsapp"></i>
+    <i class="fa-brands fa-whatsapp"></i>
     </a>
     <a href="#" class="icono3">
-      <i class="fa-regular fa-envelope"></i>
+    <i class="fa-regular fa-envelope"></i>
     </a>
-  </div>
-  <div>
-    <h2 style="font-size: medium; color: gray; text-align: center;">© NeekoPedia 2024</h2> 
-  </div>
+</div>
+<div>
+    <h2 class="footerText">© NeekoPedia 2024</h2> 
+</div>
 </footer>
 <!--FIN FOOTER-->
 

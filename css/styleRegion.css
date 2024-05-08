@@ -1,0 +1,286 @@
+body{margin-top: 0;
+    padding-top: 0;}
+.navbar {
+    margin-top: 0;
+    padding-top: 0; 
+    background-image: linear-gradient(#010A13,#1E282D,#1E2328);
+    height: 110px;}
+.navbar-toggler-icon{background-color: #1E282D;}
+.navbar-toggler{background-color: #1E282D;
+border-radius: 20px;}
+@font-face {
+    font-family: BeaufortforLOL;
+    src: url(Fonts/BeaufortforLOL-Heavy.ttf);
+}
+@font-face {
+    font-family: BeaufortforLOL2;
+    src: url(Fonts/BeaufortforLOL-HeavyItalic.ttf);
+}
+@font-face {
+    font-family: BeaufortforLOL3;
+    src: url(Fonts/BeaufortforLOL-Medium.ttf);
+}
+@font-face {
+    font-family: Cyberpunk;
+    src: url(Fonts/CyberpunkWaifus\ \(1\).ttf);
+}
+/*Texto barra navegacion*/
+#tituloPag{font-family: BeaufortforLOL; 
+    font-size: 2.2em;
+    margin-top: 22px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    background: linear-gradient(#C89B3C,#785A28);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;}
+#tituloPag:hover{
+    transform: scale(1.2,1.2);
+    transition: 0.5s;
+}
+#tituloPag2{font-family: BeaufortforLOL; 
+    font-size: 1.9em;
+    margin-top: 22px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    background: linear-gradient(#C89B3C,#785A28);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;}
+
+.dropdown-divider{    background-color: #fff; /* Cambiar el color de fondo a blanco */
+    margin: 0.5rem 0; /* Ajustar el espacio vertical según sea necesario */
+    height: 1px; /* Definir la altura del divisor */
+    border: none;}
+
+/*Fin Texto barra navegacion*/
+    
+/*Body toggler navbar*/
+.offcanvas-body{
+    background-image: linear-gradient(#1E282D,#1E2328);
+}
+.nav-link{color: white;
+    font-size: 25px;
+    font-family: BeaufortforLOL3;
+    }
+.nav-link:hover{transform: translateY(-2px);
+    color: white;
+transition: 0.5s;
+}
+.offcanvas-header{background-image: linear-gradient(#1E282D,#1E2328);
+}  
+.offcanvas-title{font-size: 2.5em;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: BeaufortforLOL;
+    background: linear-gradient(#C89B3C,#785A28);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.dropdown-menu{background-color: #1E2328;
+    border: 1px solid white;
+}
+.dropdown-item{color: white;
+font-size: 20px;
+font-family: BeaufortforLOL3;
+}
+.btn-close{background-color: white
+}
+/*Fin Toggler navbar*/
+
+/*carrusel, titulos y texto*/
+#informacion{
+
+    text-align: justify;
+    color: gray;
+}
+#informacion p,h3{
+    margin-bottom: 0;
+}
+#informacion:hover{
+    color: black;
+    transition: 0.3s;
+}
+
+#titulo-car{
+    position: absolute;
+    
+}
+.titulo{
+    z-index: 1000;
+    top: 10px;
+    right: auto;
+    left: auto;
+}
+.parrafo{
+    width: 75%;
+    margin: auto;
+}
+/*carrusel, titulos y texto*/
+
+/*formato para la disposicion en el bloque general*/
+.con-der{
+    overflow: auto;
+    color: white;
+    display: block;
+    width: 100%;
+    padding: 0.3em;
+    align-items: flex-start;
+}
+.con-izq{
+    overflow: auto;
+    height: fit-content;
+    color: white;
+    display: block;
+    width: 100%;
+    padding: 0.3em;
+    align-items: flex-start;
+}
+
+/*formato para la disposicion en el bloque general*/
+article{
+    margin-bottom: 1.5em;
+    border: 3px solid gray;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+/*Marco imagen*/
+.marco-izq{
+    width: 25em;
+    height: fit-content;
+    float: left;
+    display: block;
+    padding: 0.15em;
+    border: 3px solid gray;
+    margin: 0.25em;
+    border-radius: 0.5em;
+}
+.marco-der{
+    width: 25em;
+    height: fit-content;
+    float: right;
+    display: block;
+    padding: 0.15em;
+    border: 3px solid gray;
+    margin: 0.25em;
+    border-radius: 0.5em;
+}
+
+.marco-der img{
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5em;
+}
+.marco-izq img{
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5em;
+}
+/*Marco imagen*/
+
+/*parrafos*/
+.con-izq:hover{
+    color: black;
+    transition: 0.5s;
+}
+.con-der:hover{
+    color: black;
+    transition: 0.5s;
+}
+p{
+    margin-left: 1.25em;
+    margin-right: 1.25em;
+    text-align: justify;
+    font-family: BeaufortforLOL3;
+}
+/*parrafos*/
+a{text-decoration: none;
+}
+
+h5 {font-family: BeaufortforLOL3;
+color: black;
+}
+article h3{font-family: BeaufortforLOL3;
+    
+}
+
+/*Cambio de tamaño de las imagenes y el texto por el tamaño de la pantalla*/
+@media screen and (max-width: 550px){
+    .marco-izq{
+        width: auto;
+        float: none;
+        display: block;
+        padding: 0.5em;
+        border: 3px solid gray;
+        border-radius: 0.25em;
+    }
+    .marco-der{
+        width: auto;
+        float: none;
+        display: block;
+        padding: 0.5em;
+        border: 3px solid gray;
+        border-radius: 0.25em;
+    }
+    
+    .marco-izq img{
+        object-fit: contain;
+        max-width: 100%;
+        height: auto;
+    }
+    .marco-der img{
+        object-fit: contain;
+        max-width: 100%;
+        height: auto;
+    }
+    .con-izq{
+        display: block;
+        color: black;
+    }
+    .con-der{
+        display: block;
+        color: black;
+    }
+}
+
+
+
+
+/*----FOOTER----*/
+/* formato footer*/
+footer{background-color: black;
+    position: relative;
+    width: 100%;
+    height: 120px;
+    bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.footerText{color: white;
+    font-size: large; text-align: center; margin-top: px;}
+    
+/* editar contenido del footer*/
+.footer{
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+        
+}
+/* editar iconos footer*/
+.footer a{font-size: 25px;}
+/* Edit iconos*/
+
+.icono1:hover{color: rgb(40, 29, 189);
+    transform: scale(1.2);
+    transition: 0.6s;}
+.icono2{color: green;}
+.icono2:hover{color: rgb(1, 80, 1);
+    transform: scale(1.2);
+    transition: 0.6s;}
+.icono3{color: rgb(170, 167, 167);}
+.icono3:hover{color: rgb(139, 137, 137);
+    transform: scale(1.2);
+    transition: 0.6s;}
+    /*----FIN FOOTER----*/
