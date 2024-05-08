@@ -1,106 +1,91 @@
-body{
-    background-color: white;
-}
-.navbar{
+body{margin-top: 0;
+    padding-top: 0;}
+.navbar {
+    margin-top: 0;
+    padding-top: 0; 
     background-image: linear-gradient(#010A13,#1E282D,#1E2328);
-
+    height: 110px;}
+.navbar-toggler-icon{background-color: #1E282D;}
+.navbar-toggler{background-color: #1E282D;
+border-radius: 20px;}
+@font-face {
+    font-family: BeaufortforLOL;
+    src: url(Fonts/BeaufortforLOL-Heavy.ttf);
 }
-/* COLOR NAVBAR menu celu*/
-.custom-navbar-toggler {
-    background-color: rgb(190, 188, 188); /* Cambia el color del texto */
+@font-face {
+    font-family: BeaufortforLOL2;
+    src: url(Fonts/BeaufortforLOL-HeavyItalic.ttf);
 }
-
-
-
-
-/* cambio color letras navbar*/
-#white{
-    color: white;}
-
-#white:hover{
-    color: white;
-    transform: translateY(-2px);
-    transition: 0.3s;
+@font-face {
+    font-family: BeaufortforLOL3;
+    src: url(Fonts/BeaufortforLOL-Medium.ttf);
 }
+@font-face {
+    font-family: Cyberpunk;
+    src: url(Fonts/CyberpunkWaifus\ \(1\).ttf);
+}
+/*Texto barra navegacion*/
+#tituloPag{font-family: BeaufortforLOL; 
+    font-size: 2.2em;
+    margin-top: 22px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    background: linear-gradient(#C89B3C,#785A28);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;}
+#tituloPag:hover{
+    transform: scale(1.2,1.2);
+    transition: 0.5s;
+}
+#tituloPag2{font-family: BeaufortforLOL; 
+    font-size: 1.9em;
+    margin-top: 22px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    background: linear-gradient(#C89B3C,#785A28);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;}
 
-/* Movimiento del logo 
-#logoP:hover{}*/
+.dropdown-divider{    background-color: #fff; /* Cambiar el color de fondo a blanco */
+    margin: 0.5rem 0; /* Ajustar el espacio vertical según sea necesario */
+    height: 1px; /* Definir la altura del divisor */
+    border: none;}
 
-/* formato footer*/
-footer{
-    background-color: black;
-    position: relative;
-    width: 100%;
-    height: 100px;
-    bottom: 0;
-}
-
-/* editar contenido del footer*/
-.footer{
-    color: white;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-/* editar iconos footer*/
-.footer a{
-    font-size: 25px;
-}
-
-/* Edit iconos*/
-.icono1:hover{
-    color: rgb(40, 29, 189);
-    transform: scale(1.2);
-    transition: 0.6s;
-}
-
-.icono2{
-    color: green;
-}
-.icono2:hover{
-    color: rgb(1, 80, 1);
-    transform: scale(1.2);
-    transition: 0.6s;
-}
-
-.icono3{
-    color: rgb(170, 167, 167);
-}
-.icono3:hover{
-    color: rgb(139, 137, 137);
-    transform: scale(1.2);
-    transition: 0.6s;
-}
-
-/*EDICION CUERPO REGION*/
-/*Edición título*/
-h3{
-    text-align: center;
-}
-h5{
-    margin-top: 3px;
-    margin-bottom: 3px;
+/*Fin Texto barra navegacion*/
     
+/*Body toggler navbar*/
+.offcanvas-body{
+    background-image: linear-gradient(#1E282D,#1E2328);
 }
-
-/*Edición imagen*/
-
-/*NAVBAR item menu*/
-#menu{
-    opacity: 0.7;
-    position: absolute;
-    z-index: 1000;
-    margin-left: 20px;
+.nav-link{color: white;
+    font-size: 25px;
+    font-family: BeaufortforLOL3;
+    }
+.nav-link:hover{transform: translateY(-2px);
+    color: white;
+transition: 0.5s;
 }
-
-#inicio{
-    display: flex;
-    width: 700px;
-    height: auto;
-    padding: 0px;
+.offcanvas-header{background-image: linear-gradient(#1E282D,#1E2328);
+}  
+.offcanvas-title{font-size: 2.5em;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: BeaufortforLOL;
+    background: linear-gradient(#C89B3C,#785A28);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
-/*NAVBAR item menu*/
+.dropdown-menu{background-color: #1E2328;
+    border: 1px solid white;
+}
+.dropdown-item{color: white;
+font-size: 20px;
+font-family: BeaufortforLOL3;
+}
+.btn-close{background-color: white
+}
+/*Fin Toggler navbar*/
 
 /*carrusel, titulos y texto*/
 #informacion{
@@ -207,8 +192,18 @@ p{
     margin-left: 1.25em;
     margin-right: 1.25em;
     text-align: justify;
+    font-family: BeaufortforLOL3;
 }
 /*parrafos*/
+a{text-decoration: none;
+}
+
+h5 {font-family: BeaufortforLOL3;
+color: black;
+}
+article h3{font-family: BeaufortforLOL3;
+    
+}
 
 /*Cambio de tamaño de las imagenes y el texto por el tamaño de la pantalla*/
 @media screen and (max-width: 550px){
@@ -248,19 +243,44 @@ p{
         color: black;
     }
 }
-.tituloPag{font-family: BeaufortforLOL; 
-    font-size: 2.5em;
-    margin-right: 40px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    background: linear-gradient(#C89B3C,#785A28);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;}
 
-@font-face {
-    font-family: BeaufortforLOL;
-    src: url(Fonts/BeaufortforLOL-Heavy.ttf);
+
+
+
+/*----FOOTER----*/
+/* formato footer*/
+footer{background-color: black;
+    position: relative;
+    width: 100%;
+    height: 120px;
+    bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
-.navbar-toggler-icon{background-color: white;}
-.navbar-toggler{background-color: white;}
+.footerText{color: white;
+    font-size: large; text-align: center; margin-top: px;}
+    
+/* editar contenido del footer*/
+.footer{
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+        
+}
+/* editar iconos footer*/
+.footer a{font-size: 25px;}
+/* Edit iconos*/
+
+.icono1:hover{color: rgb(40, 29, 189);
+    transform: scale(1.2);
+    transition: 0.6s;}
+.icono2{color: green;}
+.icono2:hover{color: rgb(1, 80, 1);
+    transform: scale(1.2);
+    transition: 0.6s;}
+.icono3{color: rgb(170, 167, 167);}
+.icono3:hover{color: rgb(139, 137, 137);
+    transform: scale(1.2);
+    transition: 0.6s;}
+    /*----FIN FOOTER----*/

@@ -1,60 +1,93 @@
-.navbar{
+body{margin-top: 0;
+    padding-top: 0;}
+.navbar {
+    margin-top: 0;
+    padding-top: 0; 
     background-image: linear-gradient(#010A13,#1E282D,#1E2328);
-
+    height: 110px;}
+.navbar-toggler-icon{background-color: #1E282D;}
+.navbar-toggler{background-color: #1E282D;
+border-radius: 20px;}
+@font-face {
+    font-family: BeaufortforLOL;
+    src: url(Fonts/BeaufortforLOL-Heavy.ttf);
 }
-
-.custom-navbar-toggler {
-    background-color: rgb(190, 188, 188); /* Cambia el color del texto */
+@font-face {
+    font-family: BeaufortforLOL2;
+    src: url(Fonts/BeaufortforLOL-HeavyItalic.ttf);
 }
-    /* cambio color letras navbar*/
-    #white{
-        color: white;}
-        
-        #white:hover{color: white;
-            transform: translateY(-2px);
-        transition: 0.3s;}
-
-/*----FOOTER----*/
-    /* formato footer*/
-    footer{background-color: black;
-        position: relative;
-        width: 100%;
-        height: 100px;
-        bottom: 0;}
-    
-        /* editar contenido del footer*/
-        .footer{
-                color: white;
-                display: flex;
-                justify-content: center;
-                gap: 20px;
-                
-        }
-        /* editar iconos footer*/
-        .footer a{font-size: 25px;}
-    
-        /* Edit iconos*/
-        .icono1{}
-        .icono1:hover{color: rgb(40, 29, 189);
-            transform: scale(1.2);
-            transition: 0.6s;}
-    
-        .icono2{color: green;}
-        .icono2:hover{color: rgb(1, 80, 1);
-            transform: scale(1.2);
-            transition: 0.6s;}
-    
-        .icono3{color: rgb(170, 167, 167);}
-        .icono3:hover{color: rgb(139, 137, 137);
-            transform: scale(1.2);
-            transition: 0.6s;}
-            /*----FIN FOOTER----*/
-    /*----FIN COMUN----*/
-
-
-body {
-    background-color: white;
+@font-face {
+    font-family: BeaufortforLOL3;
+    src: url(Fonts/BeaufortforLOL-Medium.ttf);
 }
+/*Texto barra navegacion*/
+#tituloPag{font-family: BeaufortforLOL; 
+    font-size: 2.2em;
+    margin-top: 22px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    background: linear-gradient(#C89B3C,#785A28);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;}
+#tituloPag:hover{
+    transform: scale(1.2,1.2);
+    transition: 0.5s;
+}
+#tituloPag2{font-family: BeaufortforLOL; 
+    font-size: 2.2em;
+    margin-top: 22px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    background: linear-gradient(#C89B3C,#785A28);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;}
+
+.dropdown-divider{    background-color: #fff; /* Cambiar el color de fondo a blanco */
+    margin: 0.5rem 0; /* Ajustar el espacio vertical según sea necesario */
+    height: 1px; /* Definir la altura del divisor */
+    border: none;}
+
+/*Fin Texto barra navegacion*/
+    
+/*Body toggler navbar*/
+.offcanvas-body{
+    background-image: linear-gradient(#1E282D,#1E2328);
+}
+.nav-link{color: white;
+    font-size: 25px;
+    font-family: BeaufortforLOL3;
+    }
+.nav-link:hover{transform: translateY(-2px);
+    color: white;
+transition: 0.5s;
+}
+.offcanvas-header{background-image: linear-gradient(#1E282D,#1E2328);
+}  
+.offcanvas-title{font-size: 2.5em;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: BeaufortforLOL;
+    background: linear-gradient(#C89B3C,#785A28);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.dropdown-menu{background-color: #1E2328;
+    border: 1px solid white;
+}
+.dropdown-item{color: white;
+font-size: 20px;
+font-family: BeaufortforLOL3;
+}
+.btn-close{background-color: white
+}
+/*Fin Toggler navbar*/
+
+
+
+
+
+
 
 
 .champion {
@@ -66,6 +99,7 @@ body {
     background-color: #1f1f1f;
     max-width: auto;   
     transition: background-color 0.7s ease-in-out, border-radius 0.7s ease-in-out;
+    font-family: BeaufortforLOL3;
 }
 .champion:hover{
     transform: translateY(-3px);
@@ -80,6 +114,7 @@ body {
     border-radius: 6px;
     padding: 5px 10px;
     transition: background-color 0.3s ease;
+    text-decoration: none;
 }
 .champion a:hover{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
@@ -133,9 +168,7 @@ body {
 }
 
 /*FILTROS*/
-#flip {    
 
-}
 #panel  {
     text-align: center;
     background-color: white;
@@ -182,19 +215,45 @@ body {
     
 }
 
-.tituloPag{font-family: BeaufortforLOL; 
-    font-size: 2.5em;
-    margin-right: 40px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-margin-left: 20px;
-background: linear-gradient(#C89B3C,#785A28);
--webkit-text-fill-color: transparent;
--webkit-background-clip: text;}
 
-@font-face {
-    font-family: BeaufortforLOL;
-    src: url(Fonts/BeaufortforLOL-Heavy.ttf);
+
+/*----FOOTER----*/
+/* formato footer*/
+footer{background-color: black;
+    position: relative;
+    width: 100%;
+    height: 120px;
+    bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
-.navbar-toggler-icon{background-color: white;}
-.navbar-toggler{background-color: white;}
+.footerText{color: white;
+    font-size: large; text-align: center; }
+    
+/* editar contenido del footer*/
+.footer{
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+        
+}
+/* editar iconos footer*/
+.footer a{font-size: 25px;}
+/* Edit iconos*/
+
+.icono1:hover{color: rgb(40, 29, 189);
+    transform: scale(1.2);
+    transition: 0.6s;}
+.icono2{color: green;}
+.icono2:hover{color: rgb(1, 80, 1);
+    transform: scale(1.2);
+    transition: 0.6s;}
+.icono3{color: rgb(170, 167, 167);}
+.icono3:hover{color: rgb(139, 137, 137);
+    transform: scale(1.2);
+    transition: 0.6s;}
+    /*----FIN FOOTER----*/
+
+
+

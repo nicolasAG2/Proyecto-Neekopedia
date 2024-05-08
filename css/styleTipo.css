@@ -1,3 +1,4 @@
+
 body{margin-top: 0;
     padding-top: 0;}
 .navbar {
@@ -83,6 +84,111 @@ font-family: BeaufortforLOL3;
 }
 /*Fin Toggler navbar*/
 
+
+
+
+
+
+
+
+
+.champion {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    font-family: BeaufortforLOL3;
+    background-color: #1f1f1f;
+    max-width: auto;   
+}
+.champion:hover{
+    transform: translateY(-3px);
+    transition: 0.7s;
+}
+.champion a{
+    background-color: #ffa500;
+    color: rgb(56, 55, 55);
+    border-radius: 6px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+
+}
+.champion a:hover{
+    
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
+    transition: 0.3s;
+    background-color: #ff6600;
+}
+
+.champion img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
+    
+}
+
+.champion h1{
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 300px;
+    color: white;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    
+}
+.champion h4{
+    color: #ffa500;
+    font-size: 1.2em;
+    
+}
+.champion p{
+    color: rgb(196, 194, 194);
+    font-size: 1.2em;
+    
+}
+
+
+
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-image: linear-gradient(#010A13,#1E282D,#1E2328);
+    border: solid 1px #c3c3c3;
+    color: gray;
+    position: absolute;
+    z-index: 9999;
+}
+
+#flip{
+    width: 30px;
+    height: 35px;
+    position: relative;
+    
+    
+}
+
+#panel {
+    padding: 1px;
+    display: none;
+    margin: 0;
+    width: 100px;
+}
+
+a{text-decoration: none;
+    color: gray;}
+
+
+.champType{font-family: BeaufortforLOL; 
+    font-size: 2.5em;
+margin-left: 40px;
+
+background: linear-gradient(#C89B3C,#785A28);
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+}
 
 
 

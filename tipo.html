@@ -12,52 +12,60 @@
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
 
-<link rel="stylesheet" href="css/tipo.css">
+<link rel="stylesheet" href="css/styleTipo.css">
 
-<script src="campeones.js"></script> 
+
 </head>
 <body>
-    <!--BARRA DE NAVEGACION-->
-    <header>
-        <nav class="navbar navbar-expand-xl ">
-            <div class="container-fluid">
-                <a href="index.html" style="text-decoration: none;"><h1 class="tituloPag">NEEKOPEDIA</h1></a>
-                <button  class="navbar-toggler custom-navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon" ></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="white" aria-current="page" href="index.html"><b>INICIO</b></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="white" href="region.html"><b>REGIONES</b></a>
-                        </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="white" href="fanArt.html"><b>FANARTS</b></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="white" href="Campeones.html"><b>CAMPEONES</b></a>
-                            </li>
-                            </li>
-                            <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <b>PERFIL</b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="registro.html"target="">REGISTRO</a></li>
-                                <li><a class="dropdown-item" href="inicioSesion.html">LOGIN</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+<!--BARRA DE NAVEGACION-->
+<header>
+<nav class="navbar navbar-dark bg-dark m-0 ">
+    <div class="container-fluid" bis_skin_checked="1" >
+        <a class="navbar-brand" href="index.html" id="tituloPag">NEEKOPEDIA</a>
+        <button class="navbar-toggler" style="margin-right: 10px;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" bis_skin_checked="1">
+        <div class="offcanvas-header" bis_skin_checked="1">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">NEEKOPEDIA</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body" bis_skin_checked="1">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="index.html" 
+                    >Inicio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="region.html" 
+                    >Regiones</a>
+                </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="fanArt.html" 
+                >FanArts</a>
+            </li>
             
-            </nav>
-            <hr>
-        </header>
-    
-        <!--FIN HEADER-->
+            <li class="nav-item">
+                <a class="nav-link" href="Campeones.html">Campeones</a>
+            </li>
+            <hr class="dropdown-divider">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Perfil
+                </a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="registro.html">REGISTRO</a></li>
+                <li><a class="dropdown-item" href="inicioSesion.html">LOGIN</a></li>
+                </ul>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    </nav>
+</header>
+
+<!--FIN HEADER-->
 
 
         <div id="flip" style="position: fixed"><i class="fa-solid fa-arrow-right"></i>
@@ -73,7 +81,7 @@
         </div>
         
 
-        <h1 class="champType" id="luchador">LUCHADOR</h1>        
+        <h1 class="champType" id="luchador" style="margin-top: 20px;">LUCHADOR</h1>        
         <div class="container-fluid" id="champions-fighter" style="margin-top: 20px; ">
             <div class="row">
                 <div class="col">
@@ -125,8 +133,10 @@
             </div>
         </div>
 
-<footer>
-    <h3 style="color: gray; font-size: large; text-align: center; margin-top: 10px;">CONTACTANOS</h3>
+        
+<!--FOOTER-->
+<footer >
+    <h3 class="footerText">CONTACTANOS</h3>
     <div class="footer">
         <a href="https://web.facebook.com/LeagueofLegendsLatino?locale=es_LA" class="icono1">
         <i class="fa-brands fa-square-facebook"></i>
@@ -139,12 +149,12 @@
         </a>
     </div>
     <div>
-        <h2 style="font-size: medium; color: gray; text-align: center;">© NeekoPedia 2024</h2> 
+        <h2 class="footerText">© NeekoPedia 2024</h2> 
     </div>
-</footer>
-<!--FIN FOOTER-->
+    </footer>
+    <!--FIN FOOTER-->
 
 
-
+    <script src="campeones.js"></script> 
 </body>
 </html>

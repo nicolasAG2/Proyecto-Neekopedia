@@ -18,7 +18,7 @@ function mostrarChamps() {
                 rowDiv = document.createElement('div');
                 rowDiv.classList.add('row');
             }
-
+            const championId = championsData[champion].id;
             const championName = championsData[champion].name;
             const championTitle = championsData[champion].title;
             const championTags = championsData[champion].tags[0];
@@ -30,7 +30,7 @@ function mostrarChamps() {
             championColDiv.innerHTML = `
             <img src="${championImage}" alt="${championName}"> <br>
             <h1>${championName}</h1>  <h4>${championTitle}</h4> <p>${championDesc}</p>
-            <a href="detalles_campeon.html?champion=${encodeURIComponent(championName)}">Ver detalles</a>
+            <a href="detalles_campeon.html?champion=${encodeURIComponent(championId)}">Ver detalles</a>
         `;
 
 
@@ -75,7 +75,7 @@ function mostrarFighters() {
                     rowDiv = document.createElement('div');
                     rowDiv.classList.add('row');
                 }
-                
+                const championId = championsData[champion].id;
                 const championName = championsData[champion].name;
                 const championTitle = championsData[champion].title;
                 const championDesc = championsData[champion].blurb;
@@ -87,7 +87,7 @@ function mostrarFighters() {
                     fighterColDiv.innerHTML = `
                     <img src="${championImage}" alt="${championName}"> <br>
                     <h1>${championName}</h1>  <h4>${championTitle}</h4> <p>${championDesc}</p>
-                    <a href="detalles_campeon.html?champion=${encodeURIComponent(championName)}">Ver detalles</a>
+                    <a href="detalles_campeon.html?champion=${encodeURIComponent(championId)}">Ver detalles</a>
                 `;
                     // Agregar el campeón a la fila actual
                     rowDiv.appendChild(fighterColDiv);
@@ -133,7 +133,7 @@ function mostrarMagos() {
                 rowDiv = document.createElement('div');
                 rowDiv.classList.add('row');
             }
-            
+            const championId = championsData[champion].id;
             const championName = championsData[champion].name;
             const championTitle = championsData[champion].title;
             const championTags = championsData[champion].tags[0];
@@ -146,7 +146,7 @@ function mostrarMagos() {
                 magesColDiv.innerHTML = `
                 <img src="${championImage}" alt="${championName}"> <br>
                 <h1>${championName}</h1>  <h4>${championTitle}</h4> <p>${championDesc}</p>
-                <a href="detalles_campeon.html?champion=${encodeURIComponent(championName)}">Ver detalles</a>
+                <a href="detalles_campeon.html?champion=${encodeURIComponent(championId)}">Ver detalles</a>
             `;
                 // Agregar el campeón a la fila actual
                 rowDiv.appendChild(magesColDiv);
@@ -195,7 +195,7 @@ function mostrarAsesinos() {
                 rowDiv = document.createElement('div');
                 rowDiv.classList.add('row');
             }
-            
+            const championId = championsData[champion].id;
             const championName = championsData[champion].name;
             const championTitle = championsData[champion].title;
             const championDesc = championsData[champion].blurb;
@@ -207,7 +207,7 @@ function mostrarAsesinos() {
                 AssassinColDiv.innerHTML = `
                 <img src="${championImage}" alt="${championName}"> <br>
                 <h1>${championName}</h1>  <h4>${championTitle}</h4> <p>${championDesc}</p>
-                <a href="detalles_campeon.html?champion=${encodeURIComponent(championName)}">Ver detalles</a>
+                <a href="detalles_campeon.html?champion=${encodeURIComponent(championId)}">Ver detalles</a>
             `;
                 // Agregar el campeón a la fila actual
                 rowDiv.appendChild(AssassinColDiv);
@@ -257,7 +257,7 @@ function mostrarTanques() {
                 rowDiv = document.createElement('div');
                 rowDiv.classList.add('row');
             }
-    
+            const championId = championsData[champion].id;
             const championName = championsData[champion].name;
             const championTitle = championsData[champion].title;
             const championTags = championsData[champion].tags[0];
@@ -270,7 +270,7 @@ function mostrarTanques() {
                 TankColDiv.innerHTML = `
                 <img src="${championImage}" alt="${championName}"> <br>
                 <h1>${championName}</h1>  <h4>${championTitle}</h4> <p>${championDesc}</p>
-                <a href="detalles_campeon.html?champion=${encodeURIComponent(championName)}">Ver detalles</a>
+                <a href="detalles_campeon.html?champion=${encodeURIComponent(championId)}">Ver detalles</a>
             `;
                 // Agregar el campeón a la fila actual
                 rowDiv.appendChild(TankColDiv);
@@ -315,7 +315,7 @@ function mostrarSoportes() {
             rowDiv = document.createElement('div');
             rowDiv.classList.add('row');
         }
-    
+        const championId = championsData[champion].id;
         const championName = championsData[champion].name;
         const championTitle = championsData[champion].title;
         const championTags = championsData[champion].tags[0];
@@ -328,7 +328,7 @@ function mostrarSoportes() {
             SupportColDiv.innerHTML = `
             <img src="${championImage}" alt="${championName}"> <br>
             <h1>${championName}</h1>  <h4>${championTitle}</h4> <p>${championDesc}</p>
-            <a href="detalles_campeon.html?champion=${encodeURIComponent(championName)}">Ver detalles</a>
+            <a href="detalles_campeon.html?champion=${encodeURIComponent(championId)}">Ver detalles</a>
         `;
             // Agregar el campeón a la fila actual
             rowDiv.appendChild(SupportColDiv);
@@ -372,7 +372,7 @@ function mostrarTiradores() {
             rowDiv = document.createElement('div');
             rowDiv.classList.add('row');
         }
-    
+        const championId = championsData[champion].id;
         const championName = championsData[champion].name;
         const championTitle = championsData[champion].title;
         const championTags = championsData[champion].tags[0];
@@ -385,7 +385,7 @@ function mostrarTiradores() {
             MarksmanColDiv.innerHTML = `
     <img src="${championImage}" alt="${championName}"> <br>
     <h1>${championName}</h1>  <h4>${championTitle}</h4> <p>${championDesc}</p>
-    <a href="detalles_campeon.html?champion=${encodeURIComponent(championName)}">Ver detalles</a>
+    <a href="detalles_campeon.html?champion=${encodeURIComponent(championId)}">Ver detalles</a>
 `;
 
 

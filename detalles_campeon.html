@@ -13,12 +13,12 @@
     <link rel="stylesheet" href="css/detalles_campeon.css">
 </head>
 <body>
-<button><a href="Campeones.html" style="text-align: center; font-size: 20px; padding: 4px; text-decoration: none;">VOLVER A CAMPEONES</a></button>
+<button><a href="Campeones.html" style="text-align: center; font-size: 20px; padding: 4px; text-decoration: none; color: white;">VOLVER A CAMPEONES</a></button>
 
 <div id="flip" >ELEMENTOS<i class="fa-solid fa-filter" style="font-size: 25px; "></i>
     <div id="panel">
         <a  href="#" >INICIO</a><br>
-                <hr>
+                <hr >
         <a  href="#skiiin">SKINS</a>
                 <hr>
         <a  href="#stats">ESTADISTICAS</a>
@@ -31,18 +31,17 @@
     <div id="champion-details"></div>
 <!--Fin detalles campeon -->
 
-<hr id="skiiin">
-<br><br>
+
+<br id="skiiin">
 
 <!--Skins-->
-<h3 >SKINS</h3>
+<hr id="whiteHr">
+<h1>SKINS</h1>
 <div id="champions-skins"></div>
 <!--Fin Skins-->
-    
-<hr id="stats">
-<br><br>
+<hr id="whiteHr">
 <!--STATS -->
-    <h1 >Estadisticas</h1>
+    <h1 id="stats">Estadisticas</h1>
     <table border="1"  id="champion-table">
         <tr>
             <td class="tdMain">HP</td>
@@ -74,30 +73,30 @@
         </tr>
     </table>
 <!--FIN STATS -->
-<hr id="splashh">
-<br><br>
-<h1>SPLASH ARTS</h1>
+<hr id="whiteHr">
+<br id="splashh">
+<h1 id="sp">SPLASH ARTS</h1>
 <div id="champion-splash">
 
 </div>
-    <!--FOOTER-->
-    <footer>
-        <h3 style="color: gray; font-size: large; text-align: center; margin-top: 10px;">CONTACTANOS</h3>
-        <div class="footer">
-            <a href="https://web.facebook.com/LeagueofLegendsLatino?locale=es_LA" class="icono1">
-            <i class="fa-brands fa-square-facebook"></i>
-            </a>
-            <a href="#" class="icono2">
-            <i class="fa-brands fa-whatsapp"></i>
-            </a>
-            <a href="#" class="icono3">
-            <i class="fa-regular fa-envelope"></i>
-            </a>
-        </div>
-        <div>
-            <h2 style="font-size: medium; color: gray; text-align: center;">© NeekoPedia 2024</h2> 
-        </div>
-    </footer>
+<!--FOOTER-->
+<footer >
+    <h3 class="footerText">CONTACTANOS</h3>
+    <div class="footer">
+        <a href="https://web.facebook.com/LeagueofLegendsLatino?locale=es_LA" class="icono1">
+        <i class="fa-brands fa-square-facebook"></i>
+        </a>
+        <a href="#" class="icono2">
+        <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="#" class="icono3">
+        <i class="fa-regular fa-envelope"></i>
+        </a>
+    </div>
+    <div>
+        <h2 class="footerText">© NeekoPedia 2024</h2> 
+    </div>
+</footer>
     <!--FIN FOOTER-->
 
     <script src="campeones.js"></script>
