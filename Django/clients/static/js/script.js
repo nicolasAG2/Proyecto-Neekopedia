@@ -4,7 +4,7 @@ const footer = document.querySelector("footer");
 header.innerHTML = `
 <nav class="navbar navbar-dark bg-dark m-0 ">
 <div class="container-fluid" bis_skin_checked="1" >
-  <a class="navbar-brand" href="/index" id="tituloPag">NEEKOPEDIA</a>
+  <a class="navbar-brand" href="/" id="tituloPag">NEEKOPEDIA</a>
   <button class="navbar-toggler" style="margin-right: 10px;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -16,7 +16,7 @@ header.innerHTML = `
     <div class="offcanvas-body" bis_skin_checked="1">
       <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
         <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="/index" 
+            <a class="nav-link " aria-current="page" href="/" 
               >Inicio</a>
           </li>
           <li class="nav-item">
