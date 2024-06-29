@@ -1,0 +1,72 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/styleIs.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <title>Edit Profile</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://i.pinimg.com/originals/5e/62/f1/5e62f1a8adecdeb028d6a78e6e755127.jpg'); 
+            background-size: cover;
+            background-position: center;
+            font-family: 'Roboto', sans-serif;
+            
+            color: white;
+        }
+        .container {
+            max-width: 400px;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+        .form-control, .btn-primary {
+            background-color: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+        }
+        .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .form-control:focus {
+            background-color: rgba(255, 255, 255, 0.3);
+            box-shadow: none;
+        }
+        .btn-primary {
+            background-color: #1E90FF;
+        }
+        .btn-primary:hover {
+            background-color: #1C86EE;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div class="container " style="margin-top: 40px;">
+        <h2>Editar Perfil</h2>
+        <form method="post">
+            
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary w-100" >Guardar Cambios</button>
+            <a href="/" style="margin-left: 4px; text-decoration: none; color: white;">Volver al Inicio</a>
+        </form>
+        <a href="{% url 'change_password' %}" class="btn btn-link w-100 mt-3" style="text-decoration: none; color: white;">Cambiar Contraseña</a>
+    </div>
+</body>
+</html>
