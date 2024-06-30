@@ -1,0 +1,38 @@
+{% extends 'clients/base.html' %}
+{% load static %}
+{% block content %}
+        
+<link rel="stylesheet" href="{% static 'css/Campeones.css' %}">
+
+<link rel="stylesheet" href="{% static 'css/championCard.css' %}">
+
+<script src="{% static 'js/campeones.js' %}"></script> 
+
+
+        <h1 style="margin-top: 20px; margin-bottom: 20px; text-align: center;" id="tituloPag2"><i>NOVEDADES</i></h1>
+        <div class="iframe-container" >
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tSEWZtT8M1c?si=KS3des83qtvmOBTy" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+        </div>
+
+        <div id="flip" >Filtrar<i class="fa-solid fa-filter" style="font-size: 25px; "></i>
+            <div id="panel">
+                <a  href="/champType" >TIPO DE CAMPEON</a><br>
+                <hr>
+                <a  href="#luchador">TIPO DE ENERGIA </a>
+                
+            </div>
+        </div>
+        
+        
+        <!--CAMPEONES-->
+        <div class="container-fluid" id="champions-container" style="margin-top: 20px; ">
+            <div class="row">
+                <div class="col">
+                </div>
+            </div>
+        </div>
+        <!--FIN CAMPEONES-->
+{% endblock %}
