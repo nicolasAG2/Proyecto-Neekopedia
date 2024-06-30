@@ -1,0 +1,80 @@
+{% extends 'clients/base.html' %}
+{% load static %}
+
+{% block content %}
+<style>  
+    .client-table {
+        width: 100%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        background-color: #1c1c1c;
+        color: #f0e6d2;
+        font-family: 'League of Legends', sans-serif;
+        border: 3px solid #caa045;
+        box-shadow: 0px 0px 10px #000000;
+    }
+    
+    .client-table th, .client-table td {
+        padding: 10px;
+        border: 2px solid #caa045;
+        text-align: center;
+    }
+    
+    .client-table th {
+        background-color: #2a2a2a;
+        color: #caa045;
+    }
+    
+    .client-table tr:nth-child(even) {
+        background-color: #282828;
+    }
+    
+    .client-table tr:hover {
+        background-color: #3c3c3c;
+    }
+    
+    .client-table td:first-child {
+        font-weight: bold;
+        color: #caa045;
+    }
+    
+    .delete-btn {
+        background-color: #c0392b;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+    
+    .delete-btn:hover {
+        background-color: #e74c3c;
+    }
+    </style>
+
+    <h1>USUARIOS</h1>
+    <table class="client-table">
+        <thead>
+            <tr>
+                <th>Nombre de Usuario</th>
+                <th>Email</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for client in clients %}
+            <tr>
+                <td>{{ client.nombre_user }}</td>
+                <td>{{ client.email }}</td>
+                <td>
+                    <form method="post" action="{% url 'delete_client' client.nombre_user %}">
+                        {% csrf_token %}
+                        <button type="submit" class="delete-btn">Eliminar</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
