@@ -34,6 +34,7 @@
                     <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="McQueen123">
                     <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
                 </div>
+                {{error}}
                 <p class="formulario__input-error">El usuario tiene que tener entre 4 y 16 carácteres y solo puede tener números, letras y guion bajo.</p>
             </div>
             
@@ -100,6 +101,7 @@
         </form>
     </div>
 </div>
+    <script src="{% static 'js/formulario.js' %}"></script>
     <script src="https://kit.fontawesome.com/deb6900916.js" crossorigin="anonymous"></script>
 </body>
 </html>

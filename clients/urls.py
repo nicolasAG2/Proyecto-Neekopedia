@@ -1,6 +1,6 @@
 from django.urls import path
 from . import views
-
+from administrador import urls
 
 urlpatterns = [
     path('addUser', views.addUser, name='addUser'),
@@ -10,4 +10,5 @@ urlpatterns = [
     path('regions', views.regions, name='regions'),
     path('profile/', views.edit_profile, name='edit_profile'),
     path('profile/change-password/', views.change_password, name='change_password'),
+    path('subscriptions', views.suscripciones, name='subscriptions'),
 ]

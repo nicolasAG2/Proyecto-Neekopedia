@@ -26,10 +26,16 @@ def regions(request):
     context={}
     return render(request, 'clients/region.html', context)
 
+def suscripciones(request):
+    context={}
+    return render(request, 'clients/suscripciones.html', context)
+
 def addUser(request):
     if request.method == "POST":
         if request.POST['password'] == request.POST['password2']:
+            print("contraseñas coinciden")
             try:
+                context = {'mensaje':"Cliente guardado..."}
                 user = User.objects.create_user(
                                             username=request.POST['usuario'],
                                             password=request.POST['password'],
@@ -37,29 +43,32 @@ def addUser(request):
                                             first_name=request.POST['nombre'],
                                             last_name=request.POST['apellido'])
                 user.save()
-                context = {'mensaje':"Cliente guardado..."}
-                nombre = request.POST["nombre"]
-                apellido = request.POST["apellido"]
-                usuario = request.POST["usuario"]
-                correo = request.POST["correo"]
-                telefono = request.POST["telefono"]
-                cli = cliente.objects.create(nombres = nombre,
-                                            apellidos = apellido,
-                                            nombre_user = usuario,
-                                            email = correo,
-                                            telefono = telefono, 
-                                            )
-                cli.save()
-                return render(request, 'clients/registro.html', context)
+                try:
+                    cli = cliente.objects.create(nombres = request.POST['nombre'],
+                                                apellidos = request.POST['apellido'],
+                                                nombre_user = request.POST['usuario'],
+                                                email = request.POST['correo'],
+                                                telefono = request.POST['telefono'], 
+                                                )
+                    cli.save()
+                    return render(request, 'clients/index.html', context)
+                except:
+                    print("nombre de usuario ya existe (cliente)")
+                    return render(request, 'clients/registro.html', {
+                    'error': 'Nombre de usuario ya existe.'
+                })
             except:
+                print("nombre de usuario ya existe (usuario)")
                 return render(request, 'clients/registro.html', {
                     'error': 'Nombre de usuario ya existe.'
                 })
         else:
+            print("contraseñas no coinciden")
             return render(request, 'clients/registro.html', {
                 'error': 'Contraseñas no coinciden.'
             })
     else:
+        print("entrando al formulario")
         context = {}
     return render(request, 'clients/registro.html', context)
 
